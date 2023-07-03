@@ -1,0 +1,59 @@
+footer{
+    div{
+        img{
+            width: 100px;
+            height: 100px;
+        }div{
+            h3{
+                text-align: center;
+            }p{
+                text-align: center;
+            }a{
+                text-decoration: none;
+                color: grey;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.footer__flex--container{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer__flex--info{ /* Contenedor FLEX FOOTER */
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+.contacto__flex--container{ /* Contacto */
+    display: flex;
+    flex-direction: column;
+}
+
+.nosotros__flex--container{ /* Links */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 45px;
+}
+
+.redes__flex--container{ /* Redes (IMG) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.footerImg{
+    width: 50px;
+    height: 50px;
+}
