@@ -59,20 +59,20 @@ div section img {
   justify-content: space-around; }
 
 /* Footer */
-footer div img {
-  width: 100px;
-  height: 100px; }
-
-footer div div h3 {
-  text-align: center; }
-
-footer div div p {
-  text-align: center; }
-
-footer div div a {
-  text-decoration: none;
-  color: grey;
-  text-align: center; }
+footer {
+  padding-bottom: 200px;
+  background-image: linear-gradient(to top, #000000, #2e2e2e, #585858, #878787, #b9b9b9, #d0d0d0, #e7e7e7, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff); }
+  footer div img {
+    width: 100px;
+    height: 100px; }
+  footer div div h3 {
+    text-align: center; }
+  footer div div p {
+    text-align: center; }
+  footer div div a {
+    text-decoration: none;
+    color: black;
+    text-align: center; }
 
 .footer__flex--container {
   margin-top: 30px;
