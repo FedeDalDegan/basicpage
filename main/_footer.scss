@@ -33,8 +33,6 @@ footer{
     justify-content: space-evenly;
 }
 
-
-
 .contacto__flex--container{ /* Contacto */
     display: flex;
     flex-direction: column;
@@ -63,4 +61,8 @@ footer{
 .footerImg:hover{
     transform: scale(1.1);
     transition: .2s;
+}
+
+.footer__banner{
+    width: 100%;
 }

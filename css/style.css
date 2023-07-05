@@ -38,7 +38,6 @@ div section h1 {
 div section img {
   width: 550px;
   height: 750px;
-  border: 2px solid black;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; }
 
 .carousel-inner {
@@ -59,7 +58,56 @@ div section img {
 .index__main--categorias {
   margin-top: 50px;
   display: flex;
+  flex-direction: row;
   justify-content: space-around; }
+
+/* Boton index */
+.index__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px; }
+
+.cta {
+  border: none;
+  background: none; }
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 25px;
+  padding-right: 15px;
+  text-transform: uppercase; }
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease; }
+
+.cta:hover svg {
+  transform: translateX(0); }
+
+.cta:active svg {
+  transform: scale(0.9); }
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px; }
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out; }
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left; }
 
 /* Main Productos */
 main {
@@ -79,10 +127,17 @@ main {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px 20px; }
+  column-gap: 50px; }
 
 .productos__card--img {
-  width: 350px; }
+  width: 350px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  transition: .2s; }
+
+.productos__card--img:hover {
+  transform: scale(1.01);
+  transition: .2s;
+  cursor: pointer; }
 
 /* Main Contacto */
 main {
@@ -99,6 +154,10 @@ main {
   justify-content: right;
   margin-right: 50px;
   margin-top: 50px; }
+
+.image__form {
+  width: 400px;
+  height: 400px; }
 
 ::placeholder {
   font-style: italic;
@@ -134,6 +193,14 @@ input:focus {
   margin-top: 100px;
   display: flex;
   justify-content: center; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
 
 /* Main Ubicacion */
 /* Footer */
@@ -191,3 +258,6 @@ footer {
 .footerImg:hover {
   transform: scale(1.1);
   transition: .2s; }
+
+.footer__banner {
+  width: 100%; }

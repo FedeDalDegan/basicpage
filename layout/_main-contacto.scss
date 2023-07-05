@@ -18,6 +18,12 @@ main{
     margin-top: 50px;
 }
 
+.image__form{
+    width: 400px;
+    height: 400px;    
+}
+
+
 ::placeholder{
     font-style: italic;
     text-align: left;
@@ -58,3 +64,12 @@ input:focus{
     display: flex;
     justify-content: center;
 }
+
+// Eliminar flechas de type=date
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
